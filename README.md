@@ -196,7 +196,7 @@ ForgedPort may be used when:
 * A temporary forged CitopyOS environment is required to perform the recovery operation.
 
 > [!IMPORTANT]
-> **ForgedPort cannot be used to recover or unlock a device that has been marked as stolen.** Stolen-device recovery must be performed using the appropriate AEM procedure and the original SQM code. If AEM cannot recover the device, contact Citopy support.
+> **ForgedPort cannot be used to recover or unlock a device that has been marked as stolen.** Stolen-device recovery must be performed using the appropriate AEM procedure and the original SQM code. If AEM cannot complete recovery, contact Citopy support.
 
 ### What is ForgedPort?
 
