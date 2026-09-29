@@ -14,9 +14,6 @@ In cases of data loss, corruption, forgotten passwords, or recovery errors, **Ci
 
 ## Definitions
 
-<details>
-<summary>Click to see</summary>
-
 | Term                   | Definition                                                                                                                                                         |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **CitopyOS**           | The operating system used by Citopy devices.                                                                                                                       |
@@ -31,14 +28,11 @@ In cases of data loss, corruption, forgotten passwords, or recovery errors, **Ci
 | **Recovery partition** | A system partition containing the tools and files required to perform recovery operations.                                                                         |
 | **Official CitopyOS**  | The normal licensed CitopyOS installation intended for everyday device operation.                                                                                  |
 
-</details>
-
 ---
 
 ## Contents
 
 * [Recovering phones with forgotten passwords and linked storage components](#recovering-phones-with-forgotten-passwords-and-linked-storage-components)
-
   * [Android Escape Mode](#1-android-escape-mode)
   * [RTP](#2-rtp)
   * [ForgedPort](#3-forgedport)
@@ -48,41 +42,17 @@ In cases of data loss, corruption, forgotten passwords, or recovery errors, **Ci
 
 ---
 
-<details>
-<summary style="font-size:20px"><strong>Recovering phones with forgotten passwords and linked storage components</strong></summary>
-
-<br>
+## Recovering phones with forgotten passwords and linked storage components
 
 There are three recovery methods available for Citopy phones.
 
 The recovery methods should be attempted in the following order:
 
-<table>
-<thead>
-<tr>
-<th>Order</th>
-<th>Method</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>1</strong></td>
-<td><strong>Android Escape Mode</strong></td>
-<td>First-line recovery, particularly when the original SQM code is available.</td>
-</tr>
-<tr>
-<td><strong>2</strong></td>
-<td><strong>RTP</strong></td>
-<td>Standard computer-assisted recovery method.</td>
-</tr>
-<tr>
-<td><strong>3</strong></td>
-<td><strong>ForgedPort</strong></td>
-<td>Last-resort recovery when the normal recovery methods cannot complete the recovery process.</td>
-</tr>
-</tbody>
-</table>
+| Order | Method | Purpose |
+|-------|--------|---------|
+| **1** | **Android Escape Mode** | First-line recovery, particularly when the original SQM code is available. |
+| **2** | **RTP** | Standard computer-assisted recovery method. |
+| **3** | **ForgedPort** | Last-resort recovery when the normal recovery methods cannot complete the recovery process. |
 
 > [!IMPORTANT]
 > **Try Android Escape Mode first.** If AEM cannot be used or does not recover the device, proceed to RTP. ForgedPort should only be used when AEM and RTP cannot resolve the problem.
@@ -152,7 +122,6 @@ You will need:
 * A computer
 * A USB-to-USB-C cable capable of data transfer
 * Either:
-
   * The original **SQM code**, or
   * The ability to correctly answer at least **4 security questions**
 
@@ -167,7 +136,6 @@ You will need:
 7. Select **Start Recovery Process**.
 8. A recovery window containing the Citopy logo and a progress indicator will appear.
 9. When prompted, select one of the available verification methods:
-
    * Enter the **SQM code** found on the original device box.
    * Answer **at least 4 security questions**.
 10. Wait for the recovery process to complete.
@@ -284,14 +252,9 @@ After recovery is completed, the device is returned to an official CitopyOS inst
 > [!WARNING]
 > Do not power off the phone or computer, disconnect the USB cable, or interrupt the official CitopyOS installation.
 
-</details>
-
 ---
 
-<details>
-<summary style="font-size:20px"><strong>Recovering data from storage components</strong></summary>
-
-<br>
+## Recovering data from storage components
 
 This procedure is intended for storage components affected by:
 
@@ -326,63 +289,20 @@ The component should appear with its **component ID** displayed underneath it.
 > [!NOTE]
 > This recovery procedure is designed to preserve the data stored on the component.
 
-</details>
-
 ---
 
 ## Recovery method overview
 
-<table>
-<thead>
-<tr>
-<th>Situation</th>
-<th>First option</th>
-<th>Next option</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Forgotten phone password + original SQM available</td>
-<td><strong>Android Escape Mode</strong></td>
-<td>RTP if AEM fails</td>
-</tr>
-<tr>
-<td>Forgotten phone password + no SQM</td>
-<td><strong>RTP</strong></td>
-<td>ForgedPort if normal recovery fails</td>
-</tr>
-<tr>
-<td>AEM fails</td>
-<td><strong>RTP</strong></td>
-<td>ForgedPort if RTP also fails</td>
-</tr>
-<tr>
-<td>RTP fails</td>
-<td><strong>ForgedPort</strong></td>
-<td>Contact Citopy support if unsuccessful</td>
-</tr>
-<tr>
-<td>Device marked as stolen + original SQM available</td>
-<td><strong>Android Escape Mode</strong></td>
-<td>Contact Citopy support if AEM fails</td>
-</tr>
-<tr>
-<td>Device marked as stolen + original SQM unavailable</td>
-<td><strong>Contact Citopy support</strong></td>
-<td>Do not use ForgedPort</td>
-</tr>
-<tr>
-<td>Storage component missing from Linked Devices</td>
-<td><strong>Storage component recovery</strong></td>
-<td>Contact Citopy support if unsuccessful</td>
-</tr>
-<tr>
-<td><code>invalid.link.method</code></td>
-<td><strong>Storage component recovery</strong></td>
-<td>Contact Citopy support if unsuccessful</td>
-</tr>
-</tbody>
-</table>
+| Situation | First option | Next option |
+|-----------|--------------|-------------|
+| Forgotten phone password + original SQM available | **Android Escape Mode** | RTP if AEM fails |
+| Forgotten phone password + no SQM | **RTP** | ForgedPort if normal recovery fails |
+| AEM fails | **RTP** | ForgedPort if RTP also fails |
+| RTP fails | **ForgedPort** | Contact Citopy support if unsuccessful |
+| Device marked as stolen + original SQM available | **Android Escape Mode** | Contact Citopy support if AEM fails |
+| Device marked as stolen + original SQM unavailable | **Contact Citopy support** | Do not use ForgedPort |
+| Storage component missing from Linked Devices | **Storage component recovery** | Contact Citopy support if unsuccessful |
+| `invalid.link.method` | **Storage component recovery** | Contact Citopy support if unsuccessful |
 
 > [!IMPORTANT]
 > **Never use ForgedPort for a stolen-marked device.** If the device is marked as stolen, use AEM with the original SQM code when available. If AEM cannot complete recovery, contact Citopy support.
@@ -407,5 +327,5 @@ When contacting Citopy support, provide:
 
 <p align="center">
   <strong>Citopy Support</strong><br>
-  <sub>Document created by Wanets. Last edited September 28<sup>th</sup> 2026</sub>
+  <sub>Document created by Wanets. Last edited September 29<sup>th</sup> 2026</sub>
 </p>
